@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #878f99;
+}
+
+#header {
+    font-size: 3em;
+    padding: 20px;
+    height: 15vh;
+    text-align: center;
+    vertical-align: auto;
+    line-height: 0vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#player_names {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    vertical-align: auto;
+    padding: 15px;
+}
+
+#gameBoard {
+    background-color: #6b5b95;
+    height: 40px;
+}
+
+#gameOver {
+    display: none;
+    font-size: 38px;
+}
+
+#gameBoard {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+#gameOver {
+    color: white;
+}
+
+.square {
+    border: 3px solid #a2b9bc;
+    resize: none;
+    width: 30%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square p {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.notClicked:hover {
+    background-color: lightgray;
+}

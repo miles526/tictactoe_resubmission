@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = 'stylesheet' href="./styles2.css">
+    <title>Miles' Game</title>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    <div id="player_names">
+        <div id="player1_div">
+            <button id="player1">Player 1</button>
+            <p>Player 1 (X):<span id="player1_input">_____</span></p>
+        </div>
+        <div id="player2_div">
+            <button id="player2">Player 2</button>
+            <p>Player 2 (O):<span id="player2_input">_____</span></p>
+        </div>
+        <script>
+            document.getElementById("player1").onclick = () => {
+                var name1 = prompt("Enter your name");
+            document.getElementById("player1_input").innerText = name1;
+            }
+
+            document.getElementById("player2").onclick = () => {
+                var name2 = prompt("Enter your name");
+            document.getElementById("player2_input").innerText = name2; 
+            }
+        </script>
+    </div>
+    <div id = "gameBoard">
+
+    </div>
+    <div id = "gameOver">
+        <p>Game over, <span id="winner"></span></p>
+        <button id="restartButton">Restart</button>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>
